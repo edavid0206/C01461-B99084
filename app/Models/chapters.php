@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class chapters extends Model
+{
+    use HasFactory;
+
+    public paragraphs $paragraph;
+
+    public function __construct(paragraphs $Paragraph) {
+        $this->paragraph = $Paragraph;
+    }
+}
+
+
